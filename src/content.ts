@@ -1,5 +1,5 @@
 export const practice = {
-  name: 'Владимир Курто',
+  name: 'Владимир Михайлович',
   role: 'Кинезиолог, мастер Ладания',
   phone: '+7 913 750-07-48',
   phoneHref: 'tel:+79137500748',
@@ -46,7 +46,7 @@ const imageRoot = 'https://storage2.easyweek.io/processed/images/2026-04-26/';
 
 export const portrait: PracticePhoto = {
   original: `${imageRoot}196012b60349150446f7f8f388baba52bd0671c1dbf5cfa56e3ffbd092eb356c_1920x2560.jpg`,
-  alt: 'Владимир Курто, кинезиолог и мастер Ладания в Новосибирске',
+  alt: 'Владимир Михайлович, кинезиолог и мастер Ладания в Новосибирске',
   width: 1920,
   height: 2560,
 };

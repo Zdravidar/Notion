@@ -55,7 +55,7 @@ function Monogram({ className = '' }: { className?: string }) {
 
 function Wordmark({ onClick }: { onClick?: () => void }) {
   return (
-    <a className="wordmark" href="#home" aria-label="Владимир Курто, в начало страницы" onClick={onClick}>
+    <a className="wordmark" href="#home" aria-label="Владимир Михайлович, в начало страницы" onClick={onClick}>
       <Monogram />
       <span className="wordmark-text"><span>{practice.name}</span><small>КИНЕЗИОЛОГ · МАСТЕР ЛАДАНИЯ</small></span>
     </a>
@@ -67,7 +67,7 @@ function ExternalLink({ href, children, className = '', ariaLabel }: { href: str
 }
 
 function BookingLink({ className = '', children = 'Записаться на сеанс' }: { className?: string; children?: ReactNode }) {
-  return <ExternalLink href={practice.booking} className={`button button-primary ${className}`} ariaLabel="Записаться на сеанс к Владимиру Курто через BookNow, откроется в новой вкладке"><span>{children}</span><Icon name="arrow" /></ExternalLink>;
+  return <ExternalLink href={practice.booking} className={`button button-primary ${className}`} ariaLabel="Записаться на сеанс к Владимиру Михайловичу через BookNow, откроется в новой вкладке"><span>{children}</span><Icon name="arrow" /></ExternalLink>;
 }
 
 function Photo({ photo, className = '', eager = false, sizes = '(max-width: 760px) 100vw, 50vw', full = false }: { photo: PracticePhoto; className?: string; eager?: boolean; sizes?: string; full?: boolean }) {
@@ -284,7 +284,7 @@ function Seo() {
       {
         '@type': 'ProfessionalService',
         '@id': `${canonical}#practice`,
-        name: 'Частная практика Владимира Курто',
+        name: 'Частная практика Владимира Михайловича',
         description: 'Кинезиология, P-DTR, Ладание и сенсорная адаптация. Индивидуальная работа с телом и состоянием.',
         url: canonical,
         image: portrait.original,
@@ -371,7 +371,7 @@ export default function App() {
           <div className="shell hero-inner">
             <div className="hero-copy">
               <p className="eyebrow hero-eyebrow"><span className="eyebrow-line" />ЧАСТНАЯ ПРАКТИКА В НОВОСИБИРСКЕ</p>
-              <h1 id="hero-heading"><span className="hero-name">Владимир Курто</span><span className="hero-role">Кинезиолог, мастер Ладания</span><span className="hero-statement">Вернуться в контакт<br />с собой <em>и своим телом</em></span></h1>
+              <h1 id="hero-heading"><span className="hero-name">Владимир Михайлович</span><span className="hero-role">Кинезиолог, мастер Ладания</span><span className="hero-statement">Вернуться в контакт<br />с собой <em>и своим телом</em></span></h1>
               <p className="hero-description">Индивидуальная работа с телом и состоянием<br className="desktop-break" /> в спокойной, комфортной атмосфере.</p>
               <div className="hero-actions"><BookingLink /><a className="hero-call" href={practice.phoneHref}><Icon name="phone" /><span><small>Позвонить</small>{practice.phone}</span></a></div>
               <a href="#space" className="hero-location"><Icon name="pin" /><span>{practice.shortAddress}</span></a>
@@ -384,7 +384,7 @@ export default function App() {
           <div className="shell about-grid">
             <div className="about-visual" data-reveal><Photo photo={portrait} className="about-photo" sizes="(max-width: 760px) 100vw, 38vw" /><div className="photo-caption"><span>ЛИЧНОЕ ВНИМАНИЕ. БЕРЕЖНАЯ РАБОТА.</span><span>01 / ЗНАКОМСТВО</span></div></div>
             <div className="about-copy" data-reveal>
-              <p className="eyebrow">О СПЕЦИАЛИСТЕ</p><h2 id="about-heading">Владимир Курто</h2><p className="about-role">Кинезиолог, мастер Ладания в Новосибирске</p>
+              <p className="eyebrow">О СПЕЦИАЛИСТЕ</p><h2 id="about-heading">Владимир Михайлович</h2><p className="about-role">Кинезиолог, мастер Ладания в Новосибирске</p>
               <p className="body-large">В работе я уделяю внимание индивидуальным особенностям человека, его телесному состоянию и ощущениям.</p>
               <p>Моя задача: создать пространство, в котором можно спокойно обратить внимание на себя и своё состояние.</p>
               <p>Здесь не нужно торопиться или подбирать «правильные» слова. Начать можно с того, что вы чувствуете сейчас.</p>
